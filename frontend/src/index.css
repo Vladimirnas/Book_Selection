@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-text;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold;
+  }
+  h1 {
+    @apply text-3xl md:text-4xl;
+  }
+  h2 {
+    @apply text-2xl md:text-3xl;
+  }
+  h3 {
+    @apply text-xl md:text-2xl;
+  }
+}
+
+@layer components {
+  .book-card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+  .book-cover {
+    @apply w-full h-56 object-cover;
+  }
+  .book-info {
+    @apply p-4;
+  }
+  .book-title {
+    @apply text-base font-semibold mb-1 text-text;
+  }
+  .book-author {
+    @apply text-sm text-gray-600 mb-2;
+  }
+  .book-genre {
+    @apply inline-block px-2 py-1 text-xs rounded-full bg-primary/10 text-primary truncate max-w-[70%];
+  }
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-colors;
+  }
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-secondary;
+  }
+  .btn-outline {
+    @apply border border-primary text-primary hover:bg-primary/10;
+  }
+}
+
+/* Утилиты для ограничения количества строк текста */
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

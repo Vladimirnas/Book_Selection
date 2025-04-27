@@ -1,0 +1,13 @@
+[{
+    "id": 1,
+    "title": "War and Peace",
+    "author": "Лев Толстой",
+    "year": 1864,
+    "genre": "Роман",
+    "summary": "Один из самых знаменитых романов в мировой литературе, эпическое произведение о России в период наполеоновских войн.",
+    "coverUrl": "https://covers.openlibrary.org/b/id/12621906-L.jpg",
+    "source": "openlibrary",
+    "sourceUrl": "https://openlibrary.org/works/OL267171W",
+    "parsedAt": "2025-04-26T12:00:00Z"
+  } 
+]

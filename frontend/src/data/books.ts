@@ -1,0 +1,72 @@
+import { Book } from '../types';
+
+export const books: Book[] = [
+  {
+    id: 1,
+    title: "War and Peace",
+    author: "Лев Толстой",
+    year: 1864,
+    genre: "Роман",
+    summary: "Один из самых знаменитых романов в мировой литературе, эпическое произведение о России в период наполеоновских войн.",
+    coverUrl: "https://covers.openlibrary.org/b/id/12621906-L.jpg",
+    sources: [
+      {
+        source: "openlibrary",
+        sourceUrl: "https://openlibrary.org/works/OL267171W"
+      }
+    ]
+  },
+  {
+    id: 2,
+    title: "Anna Karenina",
+    author: "Лев Толстой",
+    year: 1877,
+    genre: "Роман",
+    summary: "История замужней женщины, завязавшей роман с блестящим молодым офицером, повлекший за собой трагические последствия.",
+    coverUrl: "https://covers.openlibrary.org/b/id/12890689-L.jpg",
+    sources: [
+      {
+        source: "openlibrary",
+        sourceUrl: "https://openlibrary.org/works/OL19327W"
+      },
+      {
+        source: "gutenberg",
+        sourceUrl: "https://www.gutenberg.org/ebooks/1399"
+      }
+    ]
+  },
+  {
+    id: 3,
+    title: "Crime and Punishment",
+    author: "Фёдор Достоевский",
+    year: 1866,
+    genre: "Роман",
+    summary: "Психологический роман о нравственных дилеммах, бедном студенте, который решается на преступление, чтобы доказать свою теорию.",
+    coverUrl: "https://covers.openlibrary.org/b/id/12865033-L.jpg",
+    sources: [
+      {
+        source: "openlibrary",
+        sourceUrl: "https://openlibrary.org/works/OL1097114W"
+      }
+    ]
+  },
+  {
+    id: 4,
+    title: "The Brothers Karamazov",
+    author: "Фёдор Достоевский",
+    year: 1880,
+    genre: "Роман",
+    summary: "Философский роман о моральной ответственности, семейных проблемах и религиозных вопросах.",
+    coverUrl: "https://covers.openlibrary.org/b/id/8266084-L.jpg",
+    sources: [
+      {
+        source: "openlibrary",
+        sourceUrl: "https://openlibrary.org/works/OL62468W"
+      },
+      {
+        source: "gutenberg",
+        sourceUrl: "https://www.gutenberg.org/ebooks/28054"
+      }
+    ]
+  }
+];
